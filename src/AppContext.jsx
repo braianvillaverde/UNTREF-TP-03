@@ -13,7 +13,7 @@ import {createContext, useEffect, useState } from "react";
     const [tipos,setTipos]=useState([]);
 
     useEffect(() => {
-        fetch("datosPropiedad.json")
+        fetch("../datosPropiedad")
           .then((response) => response.json())
           .then((propiedades) => setTipos(propiedades));
       }, []);
@@ -22,7 +22,7 @@ import {createContext, useEffect, useState } from "react";
       const [lugares,setLugares]=useState([]);
 
       useEffect(() => {
-          fetch("datosUbicacion.json")
+          fetch("../datosUbicacion.json")
             .then((response) => response.json())
             .then((ubicaciones) => setLugares(ubicaciones));
         }, []);
