@@ -1,0 +1,6 @@
+[
+    {"id":1,"nombre": "CABA", "factor": 1.13},
+{"id":2,"nombre": "Tandil", "factor": 1.04},
+{"id":3,"nombre": "Costa Atlántica", "factor": 1.29},
+{"id":4,"nombre": "Patagonia", "factor": 1.00}
+]
