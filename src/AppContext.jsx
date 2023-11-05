@@ -9,11 +9,13 @@ import {createContext, useEffect, useState } from "react";
   const [valorpoliza,setValorPoliza]=useState(0);
   const [tipoelegido,setTipoElegido]=useState({});
   const[ubicacionelegida,setUbicacionElegida]=useState({});
+  const url1="src\datosPropiedad.json";
+  const url2="src\datosUbicacion.json";
 
     const [tipos,setTipos]=useState([]);
 
     useEffect(() => {
-        fetch("datosPropiedad.json")
+        fetch(url1)
           .then((response) => response.json())
           .then((propiedades) => setTipos(propiedades));
       }, []);
@@ -22,7 +24,7 @@ import {createContext, useEffect, useState } from "react";
       const [lugares,setLugares]=useState([]);
 
       useEffect(() => {
-          fetch("datosUbicacion.json")
+          fetch(url2)
             .then((response) => response.json())
             .then((ubicaciones) => setLugares(ubicaciones));
         }, []);
