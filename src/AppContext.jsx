@@ -9,8 +9,8 @@ import {createContext, useEffect, useState } from "react";
   const [valorpoliza,setValorPoliza]=useState(0);
   const [tipoelegido,setTipoElegido]=useState({});
   const[ubicacionelegida,setUbicacionElegida]=useState({});
-  const url1="src/datosPropiedad.json";
-  const url2="src/datosUbicacion.json";
+  const url1="./datosPropiedad.json";
+  const url2="./datosUbicacion.json";
 
     const [tipos,setTipos]=useState([]);
 
