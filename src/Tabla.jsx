@@ -1,3 +1,5 @@
+import "./tabla.css";
+
 function Tabla() {
     let historial = []
 
@@ -15,7 +17,7 @@ function Tabla() {
 
     return (
         <>
-            <div className="">
+            <div className="divtabla">
                 <table className="">
                     <thead >
                         <tr>

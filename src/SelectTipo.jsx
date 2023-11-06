@@ -21,8 +21,8 @@ function SelectTipo(){
         <>
         <div>
       <label htmlFor="tipo">Tipo de Inmueble: </label>
-      <select name="tipo" id="tipo" onChange={handleChange}>
-        <option value="">Elegir...</option>
+      <select name="tipo" id="tipo" onChange={handleChange} required>
+        <option value="" >Elegir...</option>
         {tipos.map((tipo) => (
           <option key={tipo.id} value={tipo.id}>
             {tipo.tipo}

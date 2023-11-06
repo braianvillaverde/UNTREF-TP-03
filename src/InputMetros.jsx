@@ -19,14 +19,19 @@ function InputMetros(){
 
     const cotizar=function(){
         setValorPoliza(metros*costoM2*tipoelegido.factor*ubicacionelegida.factor);
-        let mensualidad=metros*costoM2*tipoelegido.factor*ubicacionelegida.factor;
 
+        if(metros>5){
+
+        let mensualidad=metros*costoM2*tipoelegido.factor*ubicacionelegida.factor;
+        
         let hora=new Date().toLocaleString()
 
         guardarEnHistorial(hora, mensualidad.toFixed(2), tipoelegido.tipo, ubicacionelegida.nombre, metros);
 
         mostrarPoliza(mensualidad);
-        
+        }else{
+            alert("Respete los metros validos");
+        }
 
     }
 
@@ -58,7 +63,7 @@ function InputMetros(){
         <div>
         {/* <form onSubmit={handleSubmit}> */}
         <label htmlFor="metroscuadrados">Ingrese los metros Cuadrados : </label>
-        <input type="number" name="metroscuadrados" id="metroscuadrados" placeholder="Minimo admitido 5" onChange={handleChange} min={5} />
+        <input type="number" name="metroscuadrados" id="metroscuadrados" placeholder="Minimo admitido 5" onChange={handleChange} min="5" />
         <button onClick={cotizar}><span>💰</span>Cotizar</button>
         <p>
         <span id="preciomensualidad">0.00</span>

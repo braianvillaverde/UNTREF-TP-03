@@ -12,12 +12,11 @@ function Form () {
             <SelectTipo/>
             <SelectUbicacion/>
             <InputMetros/>
+            <button>
             <Link to={"historial"}>
-                <button>
                     <span>💾</span>
-                </button>
             </Link>
-            
+            </button>
         </>
     )
 }

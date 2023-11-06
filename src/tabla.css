@@ -1,0 +1,15 @@
+.divtabla {
+  width: 90%;
+  overflow: auto;
+  display: block;
+  margin: auto;
+}
+table {
+  display: block;
+  margin: auto;
+  overflow: auto;
+}
+tbody {
+  overflow-x: scroll;
+  overflow: auto;
+}

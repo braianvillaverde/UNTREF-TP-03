@@ -1,0 +1,47 @@
+body {
+  background-color: blue;
+  display: grid;
+}
+h1 {
+  text-align: center;
+}
+label {
+  display: block;
+  text-align: center;
+}
+select {
+  padding: auto;
+  margin: auto;
+  height: auto;
+  width: auto;
+  background-color: darkseagreen;
+  display: block;
+  align-content: center;
+  text-align: center;
+  border-radius: 40px;
+}
+option {
+  display: block;
+  text-align: center;
+}
+input {
+  display: block;
+  margin: auto;
+  background-color: blue;
+  border: none;
+  border-bottom: 1px solid black;
+}
+input:focus {
+  border: none;
+  border-bottom: 1px solid yellow;
+}
+button {
+  display: block;
+  margin: auto;
+  border-radius: 10px;
+}
+span {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
